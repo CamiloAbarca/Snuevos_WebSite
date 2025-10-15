@@ -12,6 +12,7 @@
                 <template v-else>
                     <b-nav-item href="#inicio" tag="a">Inicio</b-nav-item>
                     <b-nav-item href="#vehiculos" tag="a">Vehículos</b-nav-item>
+                    <b-nav-item to="/catalogo" tag="router-link">Catalogo</b-nav-item>
                     <b-nav-item to="/nosotros" tag="router-link">Nosotros</b-nav-item>
                     <b-nav-item href="#contacto" tag="a">Contacto</b-nav-item>
                 </template>
