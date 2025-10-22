@@ -1,9 +1,12 @@
 <template>
     <div>
         <br><br>
+
+        <!-- Iframe de Mirror App (único y adaptable) -->
         <iframe ref="mirrorIframe" onload="iFrameSetup(this)"
-            src="https://app.mirror-app.com/feed-instagram/b6180e36-c189-4e02-b305-d4866e04a5db/preview"
-            style="width:50%;border:none;overflow:hidden;" scrolling="no"></iframe>
+            src="https://app.mirror-app.com/feed-instagram/08f8b769-0b57-4517-b86f-e7843d8db972/preview"
+            style="border:none;overflow:hidden;" scrolling="no">
+        </iframe>
     </div>
 </template>
 
@@ -33,19 +36,23 @@ export default {
 iframe {
     display: block;
     margin: 0 auto;
+    width: 60%;
     min-height: 500px;
-    transition: width 0.3s;
+    transition: width 0.3s ease;
 }
 
+/* Tablets */
 @media (max-width: 900px) {
     iframe {
-        width: 70%;
+        width: 80%;
     }
 }
 
+/* Celulares */
 @media (max-width: 600px) {
     iframe {
         width: 100%;
+        min-height: 800px;
     }
 }
 </style>
